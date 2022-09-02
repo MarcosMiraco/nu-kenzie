@@ -1,0 +1,40 @@
+/* Colors in index.css */
+
+header {
+    padding-inline: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(---grey-1);
+    padding-block: 22px;
+    box-shadow: 0 0 8px 4px var(---grey-2);
+    margin-bottom: 40px;
+}
+
+.title-wrapper {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(---grey-4);
+}
+
+.title-wrapper span {
+    color: var(---primary-color);
+}
+
+
+header button {
+    color: var(---grey-3);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(---grey-2);
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: var(---grey-4);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}

@@ -1,0 +1,52 @@
+#homePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(---grey-4);
+    gap: 48px;
+}
+
+#homePage .homePage-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 250px;
+}
+
+#homePage .homePage-wrapper p {
+    font-size: var(---title1-size);
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+#homePage .homePage-wrapper small {
+    font-size: var(---body-size);
+    color: white;
+}
+
+#homePage .homePage-wrapper button {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    background-color: var(---primary-color);
+    border-radius: 5px;
+    font-size: var(---headline-size);
+    cursor: pointer;
+}
+
+#homePage .homePage-wrapper button:hover {
+    color: white;
+    background-color: var(---grey-3);
+}
+
+#homePage .title-wrapper {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+#homePage .title-wrapper span {
+    color: var(---primary-color);
+}

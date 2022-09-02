@@ -1,0 +1,15 @@
+.SelectInput {
+    padding: 14px 18px;
+    margin-top: 8px;
+    font-size: var(---headline-size);
+    background-color: var(---grey-1);
+    color: var(---grey-3);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.SelectInputLabel {
+    font-size: var(---body-size);
+}

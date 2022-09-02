@@ -1,0 +1,64 @@
+.entrada, .despesa {
+    background-color: var(---grey-1);
+    padding: 11px 14px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.entrada:hover, .despesa:hover {
+    background-color: white;
+    box-shadow: 0 0 10px rgb(158, 158, 158);
+}
+
+.entrada small, .despesa small {
+    text-transform: capitalize;
+    color: var(---grey-3);
+}
+
+.entrada::after {
+    content: '';
+    position: absolute;
+    inset: 0 99.5% 0 0;
+    background-color: var(---secondary-color);
+}
+
+.despesa::after {
+    content: '';
+    position: absolute;
+    inset: 0 99.5% 0 0;
+    background-color: var(---primary-color-2);
+}
+
+.description-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.card-value-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    font-weight: 400;
+}
+
+.card-value-wrapper button {
+    padding: 5px 7px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: var(---grey-2);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card-value-wrapper button:hover {
+    background-color: var(---grey-4);
+}
+
+.card-value-wrapper button img {
+    width: 20px;
+}

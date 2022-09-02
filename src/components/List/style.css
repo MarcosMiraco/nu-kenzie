@@ -1,0 +1,70 @@
+.transactionsList {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 70%;
+}
+
+.filters-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: var(---title3-size);
+    font-weight: 700;
+}
+
+.filters {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 0;
+    height: 60px;
+}
+
+.filters button {
+    color: var(---grey-3);
+    padding: 10px 15px;
+    border: none;
+    background-color: var(---grey-2);
+    border-radius: 5px;
+    font-size: var(---headline-size);
+    cursor: pointer;
+}
+
+.filters button:hover {
+    color: white;
+    background-color: var(---grey-4);
+}
+
+.filters #Active {
+    color: white;
+    background-color: var(---primary-color);
+    border-radius: 5px;
+    font-size: var(---headline-size);
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cards-wrapper img {
+    width: 100%;
+    max-width: 560px;
+    max-height: 90px;
+}
+
+.cards-wrapper li {
+    width: 100%;
+}
+
+.cards-wrapper h2 {
+    font-size: var(---title2-size);
+    font-weight: 400;
+}

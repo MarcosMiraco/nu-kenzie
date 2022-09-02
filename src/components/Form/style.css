@@ -1,0 +1,109 @@
+.addNewValue {
+    padding: 38px 25px;
+    border: 1px solid var(---grey-2);
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    border-radius: 5px;
+    color: var(---grey-4);
+}
+
+.addNewValue small {
+    font-size: var(---body-size);
+    color: var(---grey-3);
+}
+
+.form-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-value-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.value-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+    position: relative;
+}
+
+.value-wrapper::after {
+    content: 'R$';
+    position: absolute;
+    padding-top: 22px;
+    right: 15px;
+    color: var(---grey-3);
+    pointer-events: none;
+}
+
+.type-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.addNewValue button {
+    background-color: var(---primary-color-2);
+    padding: 11px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 48px;
+    font-size: var(---headline-size);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.addNewValue button:hover {
+    color: white;
+    background-color: var(---grey-4);
+}
+
+#closeModal {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 0 8px 0 black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+#closeModal::after {
+    content: '\2716';
+    font-size: 28px;
+}
+
+#openNewValueModal {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    width: 40px;
+    border: 1px solid var(---grey-3);
+    transform: scale(1.3);
+    cursor: pointer;
+    background-color: var(---primary-color);
+    z-index: 1;
+}
+
+#openNewValueModal:hover {
+    background-color: #b4265a;
+}
+
+#openNewValueModal::after {
+    content: '\002B';
+    font-size: var(---title1-size);
+    color: white;
+}

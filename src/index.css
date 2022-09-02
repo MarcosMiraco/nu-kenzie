@@ -1,0 +1,96 @@
+:root {
+  ---primary-color: #FD377E;
+  ---primary-color-2: #E34981;
+  ---secondary-color: #03B898;
+  ---grey-4: #212529;
+  ---grey-3: #868E96;
+  ---grey-2: #E9ECEF;
+  ---grey-1: #F8F9FA;
+  ---title1-size: 28px;
+  ---title2-size: 24px;
+  ---title3-size: 20px;
+  ---title4-size: 12px;
+  ---headline-size: 16px;
+  ---body-size: 12px;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  color: var(---grey-4);
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+
+@media (max-width: 900px) {
+
+  body header {
+    padding-inline: 15px;
+  }
+
+  body #homePage img {
+    display: none;
+  }
+
+  body main {
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 15px;
+  }
+
+  body .card-value-wrapper {
+    flex-grow: 1;
+  }
+
+  body .description-wrapper > p {
+    width: 60%;
+    max-width: 500px;
+  }
+
+
+  body .transactionsList {
+    width: 100%;
+  }
+
+  #displayNone {
+    display: none;
+  }
+
+  .addNewValueModalBackdrop {
+    height: 100vh;
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  body #closeModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  body .addNewValue {
+    box-shadow: 0 0 8px 0 black;
+    position: absolute;
+    border: 1px solid var(---grey-2);
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 400px;
+  } 
+
+  body #openNewValueModal {
+    display: block;
+  }
+}

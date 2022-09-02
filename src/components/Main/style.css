@@ -1,0 +1,12 @@
+main {
+    padding-inline: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

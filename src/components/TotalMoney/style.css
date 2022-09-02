@@ -1,0 +1,29 @@
+.totalMoney {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 6px;
+    border: 1px solid var(---grey-2);
+    border-radius: 5px;
+}
+
+.totalMoney small {
+    color: var(---grey-3);
+}
+
+.total-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(---title3-size);
+    font-weight: 700;
+}
+
+.total-wrapper h3 {
+    margin: 0;
+    color: var(---grey-4);
+}
+
+.total-wrapper span {
+    color: var(---primary-color);
+}
